@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Preset Version="1.0.1">
+  <Content Processor="Interface">
+    <Control type="ScriptSlider" id="Wet" value="-7"/>
+    <Control type="ScriptSlider" id="Dry" value="-100"/>
+    <Control type="ScriptSlider" id="Low" value="-5.5"/>
+    <Control type="ScriptSlider" id="High" value="7.9"/>
+    <Control type="ScriptSlider" id="PreDelay" value="7"/>
+    <Control type="ScriptSlider" id="Damp" value="-7.2"/>
+    <Control type="ScriptSlider" id="Drive" value="0"/>
+    <Control type="ScriptSlider" id="Width" value="39"/>
+    <Control type="ScriptSlider" id="Out" value="1.49012e-06"/>
+    <Control type="ScriptButton" id="Bypass" value="0"/>
+    <Control type="ScriptSlider" id="Tension" value="4"/>
+    <Control type="ScriptButton" id="SubmitButton" value="0"/>
+    <Control type="ScriptButton" id="FindButton" value="0"/>
+  </Content>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Preset>

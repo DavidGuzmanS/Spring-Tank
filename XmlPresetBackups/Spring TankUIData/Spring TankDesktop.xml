@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptImage" id="Bg" x="0" y="0" width="650" height="350"
+             fileName="{PROJECT_FOLDER}Background.png"/>
+  <Component type="ScriptSlider" id="Wet" x="86" y="115" width="50" height="50"
+             filmstripImage="{PROJECT_FOLDER}reverbtankknob.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Wet" processorId="Convolution Reverb1"
+             parameterId="WetGain" mode="Decibel" min="-100" max="-7" stepSize="0.1"
+             suffix=" dB" middlePosition="-18"/>
+  <Component type="ScriptSlider" id="Dry" x="136" y="115" width="50" height="50"
+             filmstripImage="{PROJECT_FOLDER}reverbtankknob.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Dry Level" processorId="Dry"
+             parameterId="Gain" mode="Decibel" min="-100" max="0" stepSize="0.1"
+             suffix=" dB" middlePosition="-18" defaultValue="-100"/>
+  <Component type="ScriptSlider" id="Low" x="186" y="115" width="50" height="50"
+             filmstripImage="{PROJECT_FOLDER}reverbtankknob.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Low" processorId="Parametriq EQ1"
+             parameterId="Gain" mode="Decibel" min="-18" max="18" stepSize="0.1"
+             suffix=" dB" middlePosition="0"/>
+  <Component type="ScriptSlider" id="High" x="236" y="115" width="50" height="50"
+             filmstripImage="{PROJECT_FOLDER}reverbtankknob.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="High" processorId="Parametriq EQ2"
+             parameterId="Gain" mode="Decibel" min="-18" max="18" stepSize="0.1"
+             suffix=" dB" middlePosition="0"/>
+  <Component type="ScriptSlider" id="PreDelay" x="118" y="209" width="33"
+             height="33" filmstripImage="{PROJECT_FOLDER}reverbtanklittleknob.png"
+             numStrips="31" showValuePopup="Below" pluginParameterName="Pre Delay"
+             processorId="Convolution Reverb1" mode="Time" max="200" stepSize="1"
+             suffix=" ms" middlePosition="50" isPluginParameter="1" parameterId="Predelay"/>
+  <Component type="ScriptSlider" id="Damp" x="201" y="209" width="33" height="33"
+             filmstripImage="{PROJECT_FOLDER}reverbtanklittleknob.png" numStrips="31"
+             showValuePopup="Below" isPluginParameter="1" pluginParameterName="Damp"
+             processorId="Convolution Reverb1" parameterId="Damping" mode="Decibel"
+             min="-100" max="0" stepSize="0.1" suffix=" dB" middlePosition="-18"
+             defaultValue="-18"/>
+  <Component type="ScriptSlider" id="Drive" x="285" y="209" width="33" height="33"
+             filmstripImage="{PROJECT_FOLDER}reverbtanklittleknob.png" numStrips="31"
+             showValuePopup="Below" isPluginParameter="1" pluginParameterName="Drive"
+             processorId="Saturator1" parameterId="WetAmount" mode="NormalizedPercentage"
+             suffix="%" middlePosition="0.5"/>
+  <Component type="ScriptSlider" id="Width" x="369" y="209" width="33" height="33"
+             filmstripImage="{PROJECT_FOLDER}reverbtanklittleknob.png" numStrips="31"
+             isPluginParameter="1" pluginParameterName="Width" processorId="Out"
+             parameterId="Width" defaultValue="100" max="200" middlePosition="100"
+             suffix="%" stepSize="1" showValuePopup="Below"/>
+  <Component type="ScriptSlider" id="Out" x="344" y="115" filmstripImage="{PROJECT_FOLDER}reverbtankslider.png"
+             width="30" height="50" numStrips="31" dragDirection="Vertical"
+             isPluginParameter="1" pluginParameterName="Out Level" mode="Decibel"
+             min="-100" max="15" stepSize="0.1" suffix=" dB" middlePosition="-18"
+             showValuePopup="Above"/>
+  <Component type="ScriptButton" id="Bypass" x="367" y="120" width="56" height="56"
+             filmstripImage="{PROJECT_FOLDER}switch_toggle.png" isPluginParameter="1"
+             pluginParameterName="Bypass" processorId="Spring Tank" parameterId="Bypass"/>
+  <Component type="ScriptSlider" id="Tension" x="437" y="200" stepSize="1"
+             filmstripImage="{PROJECT_FOLDER}VerticalSlider.png" height="50"
+             width="150" numStrips="31" middlePosition="2" max="4" dragDirection="Horizontal"
+             defaultValue="2" isVertical="0"/>
+  <Component type="ScriptButton" id="Ledbutton" x="492" y="161" width="38"
+             height="38" filmstripImage="{PROJECT_FOLDER}Dual_LED.png" saveInPreset="0"
+             processorId="" linkedTo="Bypass"/>
+  <Component type="ScriptButton" id="Presets" x="177" y="318" width="50" height="29"
+             filmstripImage="{PROJECT_FOLDER}presetbutton.png" saveInPreset="0"/>
+  <Component type="ScriptButton" id="Manual" x="229" y="318" width="41" height="29"
+             filmstripImage="{PROJECT_FOLDER}manualbutton.png" saveInPreset="0"
+             isMomentary="1"/>
+  <Component type="ScriptButton" id="License" x="602" y="318" width="41" height="29"
+             filmstripImage="{PROJECT_FOLDER}licensebutton.png" saveInPreset="0"/>
+  <Component type="ScriptPanel" id="PresetPanel" x="51" y="65" width="547"
+             height="198" itemColour="3959422976" itemColour2="2365587456"
+             visible="0">
+    <Component type="ScriptFloatingTile" id="ScriptFloatingTile1" x="8" y="-38"
+               width="539" height="232" parentComponent="PresetPanel" ContentType="PresetBrowser"
+               bgColour="2818572288" itemColour="4294967295" itemColour2="4294951115"
+               Data="{&#13;&#10;  &quot;ShowSaveButton&quot;: false,&#13;&#10;  &quot;ShowExpansionsAsColumn&quot;: false,&#13;&#10;  &quot;ShowFolderButton&quot;: false,&#13;&#10;  &quot;ShowNotes&quot;: false,&#13;&#10;  &quot;ShowEditButtons&quot;: false,&#13;&#10;  &quot;ShowFavoriteIcon&quot;: false,&#13;&#10;  &quot;NumColumns&quot;: 1,&#13;&#10;  &quot;ColumnWidthRatio&quot;: [&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333,&#13;&#10;    0.3333333333333333&#13;&#10;  ]&#13;&#10;}"
+               Font="Arial" FontSize="12"/>
+  </Component>
+  <Component type="ScriptPanel" id="LicensePanel" x="212" y="59" width="223"
+             height="195" itemColour="4278190080" itemColour2="2164260864"
+             visible="0">
+    <Component type="ScriptButton" id="SubmitButton" x="72" y="103" width="81"
+               height="36" parentComponent="LicensePanel" filmstripImage="{PROJECT_FOLDER}submitbutton.png"
+               isMomentary="1"/>
+    <Component type="ScriptLabel" id="SerialInput" x="9" y="65" width="206"
+               height="25" parentComponent="LicensePanel" text="" bgColour="3707764735"
+               itemColour="4294967295" itemColour2="4294967295" textColour="4280690214"
+               fontStyle="Italic"/>
+    <Component type="ScriptLabel" id="Description" x="12" y="137" width="201"
+               height="48" parentComponent="LicensePanel" editable="0" text="Invalid serial number. The number you supplied does not match"/>
+    <Component type="ScriptLabel" id="SerialStateLabel" x="9" y="89" width="206"
+               height="10" parentComponent="LicensePanel" text="" editable="0"
+               bgColour="4294901760"/>
+    <Component type="ScriptLabel" id="Enteryourserial" x="8" y="33" width="207"
+               height="31" parentComponent="LicensePanel" text="Enter your SERIAL NUMBER once."
+               fontName="Bebas" fontSize="12" editable="0"/>
+    <Component type="ScriptLabel" id="Find" x="7" y="4" width="210" height="35"
+               parentComponent="LicensePanel" text="Click Here to find your Serial Number"
+               fontName="Bebas Neue" fontSize="15" textColour="4281051344"/>
+    <Component type="ScriptButton" id="FindButton" x="0" y="0" width="223" height="37"
+               parentComponent="LicensePanel" isMomentary="1" filmstripImage="{PROJECT_FOLDER}transparent.png"/>
+  </Component>
+  <Component type="ScriptLabel" id="AuthorisationDialogue" x="496" y="318"
+             text="Unauthorized" editable="0" textColour="4294901760" fontSize="12"
+             width="106" height="29"/>
+</ContentProperties>
